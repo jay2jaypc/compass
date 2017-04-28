@@ -11,6 +11,7 @@ import { InputComponent } from './input/input.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CardComponent } from './card/card.component';
 import { LoaderComponent } from './loader/loader.component';
+import { SideNavigationComponent } from './side-navigation/side-navigation.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LoaderComponent } from './loader/loader.component';
     ButtonComponent,
     LoaderComponent,
     InputComponent,
-    NotesComponent
+    NotesComponent,
+    SideNavigationComponent
   ],
   imports: [
     CommonModule,
