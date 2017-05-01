@@ -29,7 +29,7 @@ img {
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:Arial;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size:15px;
   font-weight:bold;
   padding:6px 24px;
@@ -47,6 +47,6 @@ img {
   background-color:#378de5;
 }
 .Next:active {
-  position:relative;
-  top:1px;
+  position: absolute;
+  top:60px; right:0; left:0;
 }
