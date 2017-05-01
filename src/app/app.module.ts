@@ -8,10 +8,12 @@ import { routing } from './app.router';
 import { effects, store, instrumentation } from './store';
 import { SharedModule } from './shared/shared.module';
 import { WeatherService } from './weather/weather.service';
+import { HomeComponent } from './myBank/home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
