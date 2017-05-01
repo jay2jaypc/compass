@@ -41,7 +41,8 @@ import { SideNavigationComponent } from './side-navigation/side-navigation.compo
     ButtonComponent,
     InputComponent,
     SubNavigationComponent,
-    NotesComponent
+    NotesComponent,
+    SideNavigationComponent
   ]
 })
 export class SharedModule {}
