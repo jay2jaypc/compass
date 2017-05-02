@@ -7,17 +7,20 @@ import {RouterModule, Routes} from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './myBank/home/home.component';
 import { SavingTypeComponent } from './myBank/save/type/saving-type/saving-type.component';
+import { SavingAmountComponent } from './myBank/save/type/saving-amount/saving-amount.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
-  { path: 'savings', component: SavingTypeComponent}
+  { path: 'savings', component: SavingTypeComponent},
+  { path: 'amount', component: SavingAmountComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SavingTypeComponent
+    SavingTypeComponent,
+    SavingAmountComponent
   ],
   imports: [
     BrowserModule,
