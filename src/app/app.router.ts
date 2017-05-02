@@ -8,11 +8,12 @@ const routes: Route[] = [
   { loadChildren: 'app/weather/weather.module#WeatherModule', path: 'weather' }
 ];
 
-/* export const routing: ModuleWithProviders = RouterModule.forRoot(
+/*export const routing: ModuleWithProviders = RouterModule.forRoot(
   routes,
   {
     useHash: true
   }
 );
 
-*/
+ */
+

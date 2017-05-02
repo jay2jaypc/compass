@@ -9,7 +9,7 @@ import { HomeComponent } from './myBank/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
