@@ -6,16 +6,12 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './final-savings.component.html',
   styleUrls: ['./final-savings.component.css']
 })
-export class FinalSavingsComponent implements  OnInit {
 
-  info: {total: number};
+export class FinalSavingComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute) { }
+  constructor() { }
 
   ngOnInit() {
-    this.info = {
-      total: this.route.snapshot.params['total']
-    };
   }
 
 }
