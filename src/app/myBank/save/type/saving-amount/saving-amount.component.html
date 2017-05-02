@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 How much do you want to save?
-<input type="number">
-<button>Finish</button>
-
+<form (ngSubmit)="doSubmit($event)">
+<input type="number" name="amount1">
+<button> Finish</button>
+</form>

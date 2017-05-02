@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-saving-amount',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./saving-amount.component.css']
 })
 export class SavingAmountComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+  amount: number;
+  constructor(
+    private router: Router) { }
+ doSubmit(form: NgForm): void {
+   this.router.navigate(['/confirm', form.value]);
+ }
 
 }
