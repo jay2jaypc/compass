@@ -6,7 +6,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './final-savings.component.html',
   styleUrls: ['./final-savings.component.css']
 })
-export class FinalSavingsComponent implements  OnInit{
+export class FinalSavingsComponent implements  OnInit {
 
   info: {total: number};
 
