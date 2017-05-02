@@ -11,6 +11,9 @@ export class SavingAmountComponent implements OnInit {
   amount: number;
   constructor(
     private router: Router) { }
+  OnInit() {
+
+  }
  doSubmit(form: NgForm): void {
    this.router.navigate(['/confirm', form.value]);
  }
