@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./saving-amount.component.css']
 })
 export class SavingAmountComponent implements OnInit {
-  amount: number;
+  amountValue: number;
   constructor(
     private router: Router) { }
   ngOnInit() {
