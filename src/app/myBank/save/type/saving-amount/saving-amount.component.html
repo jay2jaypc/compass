@@ -1,6 +1,4 @@
 <!DOCTYPE html>
 How much do you want to save?
-<form (ngSubmit)="doSubmit($event)" name="test123">
-<input type="number" name="amount1">
-<button (click)="doSubmit($event)"> Finish</button>
-</form>
+<input #hey type="number" [(ngModel)]="numberValue" required>
+<button (click)="sendInfo(hey.value)"> Finish</button>
