@@ -11,7 +11,7 @@ export class SavingAmountComponent implements OnInit {
   amount: number;
   constructor(
     private router: Router) { }
-  OnInit() {
+  ngOnInit() {
 
   }
  doSubmit(form: NgForm): void {
