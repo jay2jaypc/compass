@@ -1,12 +1,11 @@
 <div class="welcomeHead">
   <table>
     <tr><h2>What would you like to save for?</h2></tr>
-    <tr><select>
-      <option value="house">House</option>
-      <option value="car">Car</option>
-      <option value="edu">Education</option>
-      <option value="man">A Man Cave</option>
-    </select></tr>
+    <tr><select #selectedCategory>
+      <option *ngFor="let type of types" [value]="types.indexOf(type)">
+        {{type.value}}
+      </option>
+    </select>
     <tr><a routerLink="/amount" class="Next">Next</a></tr>
   </table>
 </div>
