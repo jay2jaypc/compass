@@ -13,7 +13,7 @@ import { FinalSavingsComponent } from './myBank/final/final-savings/final-saving
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'savings', component: SavingTypeComponent},
-  { path: 'amount/', component: SavingAmountComponent},
+  { path: 'amount', component: SavingAmountComponent},
   { path: 'confirm/:savings', component: FinalSavingsComponent}
 ];
 
@@ -32,8 +32,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes, { useHash: true})
   ],
   bootstrap: [
-    AppComponent,
-    FinalSavingsComponent
+    AppComponent
   ]
 })
 export class AppModule {}
