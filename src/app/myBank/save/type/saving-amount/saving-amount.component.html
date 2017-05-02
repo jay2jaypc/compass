@@ -1,4 +1,4 @@
 <!DOCTYPE html>
 How much do you want to save?
-<input #hey type="number" [(ngModel)]="numberValue" required>
+<input #hey type="number" [(ngModel)]="isNumber()" required>
 <button (click)="sendInfo(hey.value)"> Finish</button>
