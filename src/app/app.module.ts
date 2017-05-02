@@ -13,8 +13,8 @@ import { FinalSavingsComponent } from './myBank/final/final-savings/final-saving
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'savings', component: SavingTypeComponent},
-  { path: 'amount', component: SavingAmountComponent},
-  // { path: 'confirm', component: FinalSavingsComponent}
+  { path: 'amount/', component: SavingAmountComponent},
+  { path: 'confirm/:savings', component: FinalSavingsComponent}
 ];
 
 @NgModule({
