@@ -10,7 +10,7 @@ import { SavingTypeComponent } from './myBank/save/type/saving-type/saving-type.
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
-  { path: 'saving', component: SavingTypeComponent}
+  { path: 'savings', component: SavingTypeComponent}
 ];
 
 @NgModule({
