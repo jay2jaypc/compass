@@ -12,7 +12,7 @@ import { FinalSavingsComponent } from './myBank/final/final-savings/final-saving
 import { CashFlowComponent } from './myBank/save/type/cash-flow/cash-flow.component';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent},
+  { path: 'welcome', component: HomeComponent},
   { path: 'savings', component: SavingTypeComponent},
   { path: 'amount', component: SavingAmountComponent},
   { path: 'confirm/:savings', component: FinalSavingsComponent},

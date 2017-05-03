@@ -16,5 +16,7 @@ export class FinalSavingsComponent implements OnInit {
       savings: this.route.snapshot.params['savings']
     };
   }
-
+  onFinish() {
+    personetics:navigate[{"navigateId":"close","url":"-"}];
+  }
 }
