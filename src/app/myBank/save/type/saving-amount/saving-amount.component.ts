@@ -14,6 +14,6 @@ export class SavingAmountComponent implements OnInit {
 
   }
  sendInfo(value: number): void {
-   this.router.navigate(['/confirm', value]);
+   this.router.navigate(['/cashflow', value]);
  }
 }
