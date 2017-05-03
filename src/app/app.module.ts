@@ -16,7 +16,7 @@ const appRoutes: Routes = [
   { path: 'savings', component: SavingTypeComponent},
   { path: 'amount', component: SavingAmountComponent},
   { path: 'confirm/:savings', component: FinalSavingsComponent},
-  { path: 'cashflow/:savings', component: CashFlowComponent}
+  { path: 'cashflow', component: CashFlowComponent}
 ];
 
 @NgModule({
