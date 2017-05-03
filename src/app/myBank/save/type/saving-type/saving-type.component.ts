@@ -18,6 +18,7 @@ export class SavingTypeComponent implements OnInit {
   ];
 
   goals = [
+    new Save('Choose One'),
     new Save('Home'),
     new Save('Car'),
     new Save('Higher Education'),
