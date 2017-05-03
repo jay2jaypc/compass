@@ -10,8 +10,10 @@
       <option *ngFor="let type of types" [value]="types.indexOf(type)">
         {{type.value}}
       </option>
-    </select>
-    <tr><a routerLink="/amount" class="Next">Next</a></tr>
+    </select></tr>
   </table>
+  <div style="padding-top: 75px;">
+    <a routerLink="/confirm" class="Next">Next</a>
+  </div>
 </div>
 
