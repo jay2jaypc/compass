@@ -31,9 +31,9 @@ export class SavingTypeComponent implements OnInit {
   }
   onChange(index) {
     if (index === 0) {
-      show = false;
+      this.show = false;
     } else {
-      show = true;
+      this.show = true;
     }
   }
 
