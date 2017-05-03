@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <div class="welcomeHead">
-  <div class="container-fluid">
-    <table>
-      <tr><p>How much do you want to save?</p></tr>
-      <tr><input #hey type="number" [(ngModel)]="amountValue" required><tr>
-      <tr>
-        <div class="container" style="padding-top: 30px;">
-          <a class="Next" (click)="sendInfo(hey.value)">Get Started</a>
-        </div>
-      </tr>
-    </table>
+How much do you want to save?
+<input #hey type="number" [(ngModel)]="amountValue" required>
+  <div class="container" style="padding-top: 30px;">
+    <a class="Next" (click)="sendInfo(hey.value)">Get Started</a>
   </div>
 </div>
