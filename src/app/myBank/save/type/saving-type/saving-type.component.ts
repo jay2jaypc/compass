@@ -29,8 +29,12 @@ export class SavingTypeComponent implements OnInit {
   ngOnInit() {
 
   }
-  onChange(newValue) {
-    this.show = true;
+  onChange(index) {
+    if (index === 0) {
+      show = false;
+    } else {
+      show = true;
+    }
   }
 
 }
