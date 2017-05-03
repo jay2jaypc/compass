@@ -11,6 +11,7 @@ import { SavingAmountComponent } from './myBank/save/type/saving-amount/saving-a
 import { FinalSavingsComponent } from './myBank/final/final-savings/final-savings.component';
 import { CashFlowComponent } from './myBank/save/type/cash-flow/cash-flow.component';
 import { PilotComponent } from './myBank/pilot/pilot.component';
+import { Home2Component } from './myBank/home2/home2.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: HomeComponent},
@@ -18,13 +19,15 @@ const appRoutes: Routes = [
   { path: 'amount', component: SavingAmountComponent},
   { path: 'confirm/:savings', component: FinalSavingsComponent},
   { path: 'cashflow', component: CashFlowComponent},
-  { path: 'pilot', component: PilotComponent}
+  { path: 'pilot', component: PilotComponent},
+  { path: 'welcomeBack', component: Home2Component}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    Home2Component,
     SavingTypeComponent,
     SavingAmountComponent,
     FinalSavingsComponent,
