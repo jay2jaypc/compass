@@ -11,9 +11,16 @@ import { Save } from './save';
 export class SavingTypeComponent implements OnInit {
   types = [
     new Save('Choose One'),
+    new Save('Savings Goal'),
     new Save('Retirement'),
-    new Save('Goal'),
-    new Save('Start Saving'),
+  ];
+
+  goal = [
+    new Save('Home'),
+    new Save('Car'),
+    new Save('Higher Education'),
+    new Save('Business'),
+    new Save('Vacation')
   ];
 
   constructor() { }
