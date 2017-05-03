@@ -6,7 +6,7 @@
     <tr><img src="../../../../../assets/bankingforall.jpg" alt="Avatar" class="avatar"></tr>
     <tr></tr>
     <tr></tr>
-    <tr><select #selectedCategory class="dropDown">
+    <tr><select #selectedCategory class="dropDown" (ngModelChange)="onChange($event)">
       <option *ngFor="let type of types" [value]="types.indexOf(type)">
         {{type.value}}
       </option>
@@ -15,5 +15,10 @@
   <div style="padding-top: 70px;">
     <a routerLink="/amount" class="Next">Next</a>
   </div>
+
+  <div *ngIf="show">
+    Hi
+  </div>
+
 </div>
 

@@ -9,6 +9,7 @@ import { Save } from './save';
 })
 
 export class SavingTypeComponent implements OnInit {
+  show: boolean;
   types = [
     new Save('Choose One'),
     new Save('Savings Goal'),
@@ -27,6 +28,9 @@ export class SavingTypeComponent implements OnInit {
 
   ngOnInit() {
 
+  }
+  onChange() {
+    this.show = true;
   }
 
 }
