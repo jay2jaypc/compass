@@ -34,7 +34,7 @@ body {
   text-align: center;
 }
 
-.Next {
+.button {
   -moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
   -webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
   box-shadow:inset 0px 1px 0px 0px #bbdaf7;
@@ -61,7 +61,7 @@ body {
   text-shadow:0px 1px 0px #528ecc;
   top: 100px; right: 0px; left: 0px;
 }
-.Next:hover {
+.button:hover {
   background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff));
   background:-moz-linear-gradient(top, #378de5 5%, #79bbff 100%);
   background:-webkit-linear-gradient(top, #378de5 5%, #79bbff 100%);
@@ -71,7 +71,12 @@ body {
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff',GradientType=0);
   background-color:#378de5;
 }
-.Next:active {
+.button:active {
   position:relative;
   top:1px;
+}
+
+.button-size{
+  width: 75px;
+  height: 30px;
 }
