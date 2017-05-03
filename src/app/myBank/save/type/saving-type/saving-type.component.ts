@@ -10,13 +10,14 @@ import { Save } from './save';
 
 export class SavingTypeComponent implements OnInit {
   show: boolean;
+  showAdditional:
   types = [
     new Save('Choose One'),
     new Save('Savings Goal'),
     new Save('Retirement'),
   ];
 
-  goal = [
+  goals = [
     new Save('Home'),
     new Save('Car'),
     new Save('Higher Education'),
@@ -32,8 +33,13 @@ export class SavingTypeComponent implements OnInit {
   onChange(index) {
     if (index === 0) {
       this.show = false;
+      this.showAdditional = false;
+    }else if (index === 2) {
+      this.showAdditional = false;
+      this.show = true;
     } else {
       this.show = true;
+      this.showAdditional = true;
     }
   }
 

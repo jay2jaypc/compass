@@ -1,7 +1,7 @@
 <div class="welcomeHead">
   <table>
     <tr><h2 style="text-align: center;">What would you like to save for?</h2></tr>
-    <tr><p style="color: black;">“By definition, saving — for anything — requires us to not get things now so we can get bigger ones later.” —
+    <tr><p style="color: black;">“By definition, saving — for anything — requires us to not get things now so we can get bigger ones later.” <br /> —
       Jean Chatzsky</p></tr>
     <tr><img src="../../../../../assets/bankingforall.jpg" alt="Avatar" class="avatar"></tr>
     <tr></tr>
@@ -11,6 +11,13 @@
         {{type.value}}
       </option>
     </select></tr>
+    <tr><div *ngIf="showAdditional">
+      <select #subcat class="dropDown" >
+        <option *ngFor="let goal of goals" [value]="goals.indexOf(goal)">
+          {{goal.value}}
+        </option>
+      </select>
+    </div></tr>
   </table>
   <div *ngIf="show">
     <app-saving-amount></app-saving-amount>
