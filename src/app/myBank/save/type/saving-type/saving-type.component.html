@@ -6,7 +6,7 @@
     <tr><img src="../../../../../assets/bankingforall.jpg" alt="Avatar" class="avatar"></tr>
     <tr></tr>
     <tr></tr>
-    <tr><select #selectedCategory class="dropDown" (ngModelChange)="onChange($event)">
+    <tr><select #selectedCategory class="dropDown" (change)="onChange($event)">
       <option *ngFor="let type of types" [value]="types.indexOf(type)">
         {{type.value}}
       </option>
