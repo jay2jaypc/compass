@@ -12,6 +12,7 @@
       </option>
     </select></tr>
     <tr><div *ngIf="showAdditional">
+      <div><h3>Be more specific</h3></div>
       <select #subcat class="dropDown" >
         <option *ngFor="let goal of goals" [value]="goals.indexOf(goal)">
           {{goal.value}}
