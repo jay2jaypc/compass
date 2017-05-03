@@ -10,7 +10,7 @@ import { Save } from './save';
 
 export class SavingTypeComponent implements OnInit {
   show: boolean;
-  showAdditional:
+  showAdditional;
   types = [
     new Save('Choose One'),
     new Save('Savings Goal'),
