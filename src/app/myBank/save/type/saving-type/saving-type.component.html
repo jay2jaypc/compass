@@ -6,11 +6,11 @@
     <tr><img src="../../../../../assets/bankingforall.jpg" alt="Avatar" class="avatar"></tr>
     <tr></tr>
     <tr></tr>
-    <tr><h3>Choose One:</h3><select #selectedCategory>
+    <tr><h3>Choose One:<select #selectedCategory>
       <option *ngFor="let type of types" [value]="types.indexOf(type)">
         {{type.value}}
       </option>
-    </select></tr>
+    </select></h3></tr>
   </table>
   <div style="padding-top: 70px;">
     <a routerLink="/amount" class="Next">Next</a>
