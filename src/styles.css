@@ -60,7 +60,8 @@ body {
   text-decoration:none;
   text-shadow:0px 1px 0px #528ecc;
   top: 100px; right: 0px; left: 0px;
-  width: 50px;
+  width: 100px;
+  height: 30px;
 }
 .Next:hover {
   background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff));
