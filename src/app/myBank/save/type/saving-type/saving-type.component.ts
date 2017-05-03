@@ -29,7 +29,7 @@ export class SavingTypeComponent implements OnInit {
   ngOnInit() {
 
   }
-  onChange() {
+  onChange(newValue) {
     this.show = true;
   }
 
