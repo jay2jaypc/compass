@@ -9,7 +9,7 @@ import { Save } from './save';
 })
 
 export class SavingTypeComponent implements OnInit {
-  show: boolean;
+  showSave: boolean;
   showAdditional;
   types = [
     new Save('Choose One'),
@@ -33,20 +33,21 @@ export class SavingTypeComponent implements OnInit {
   }
   onChange(index) {
     if (index === 0) {
-      this.show = false;
+      this.showSave = false;
       this.showAdditional = false;
     }else if (index === 2) {
       this.showAdditional = false;
-      this.show = true;
+      this.showSave = true;
     } else {
       this.showAdditional = true;
+      this.showSave = false;
     }
   }
   onSubChange(index) {
     if (index === 0) {
-      this.show = false;
+      this.showSave = false;
     } else {
-      this.show = true;
+      this.showSave = true;
     }
   }
 
