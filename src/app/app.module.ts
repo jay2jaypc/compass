@@ -12,6 +12,7 @@ import { FinalSavingsComponent } from './myBank/final/final-savings/final-saving
 import { CashFlowComponent } from './myBank/save/type/cash-flow/cash-flow.component';
 import { PilotComponent } from './myBank/pilot/pilot.component';
 import { Home2Component } from './myBank/home2/home2.component';
+import { TravelComponent } from './myBank/travel/travel.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: HomeComponent},
@@ -33,6 +34,7 @@ const appRoutes: Routes = [
     FinalSavingsComponent,
     CashFlowComponent,
     PilotComponent,
+    TravelComponent,
   ],
   imports: [
     BrowserModule,
