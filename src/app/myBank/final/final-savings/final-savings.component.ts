@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { closeWindow } from './close';
 
 @Component({
   selector: 'app-final-savings',
@@ -16,8 +17,7 @@ export class FinalSavingsComponent implements OnInit {
       savings: this.route.snapshot.params['savings']
     };
   }
-  doClose() {
-    window.close();
-  }
-
+  closeWindow()
 }
+
+
