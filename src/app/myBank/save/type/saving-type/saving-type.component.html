@@ -12,12 +12,8 @@
       </option>
     </select></tr>
     <tr><div *ngIf="showAdditional">
-      <div><h3>Be more specific</h3></div>
-      <select #subcat class="dropDown" (change)="onSubChange(subcat.selectedIndex)">
-        <option *ngFor="let goal of goals" [value]="goals.indexOf(goal)">
-          {{goal.value}}
-        </option>
-      </select>
+      <div><h3>Give Your Savings Goal a Name</h3></div>
+      <input #savingsName type="text" required>
     </div></tr>
   </table>
   <div *ngIf="showSave">
