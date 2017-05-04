@@ -16,7 +16,7 @@ export class FinalSavingsComponent implements OnInit {
       savings: this.route.snapshot.params['savings']
     };
   }
-   closeWindow(): static {
+   closeWindow(): void {
     window.close();
   }
 }
