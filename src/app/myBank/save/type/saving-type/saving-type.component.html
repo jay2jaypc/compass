@@ -13,12 +13,11 @@
     </select></tr>
     <tr><div *ngIf="showAdditional">
       <div><h3>Give Your Savings Goal a Name</h3></div>
-      <input #savingsName type="text" required>
+      <input #savingsName type="text" (keydown)="eventHandler(savingsName.value)" required>
     </div></tr>
   </table>
   <div *ngIf="showSave">
     <app-saving-amount></app-saving-amount>
   </div>
-
 </div>
 
