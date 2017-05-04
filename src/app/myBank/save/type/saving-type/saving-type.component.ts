@@ -51,7 +51,7 @@ export class SavingTypeComponent implements OnInit {
     }
   }
   eventHandler(savingsName) {
-    if (savingsName.isEmpty()) {
+    if (savingsName === '' || savingsName === ' ') {
       this.showSave = false;
     } else {
       this.showSave = true;
