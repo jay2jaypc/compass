@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { closeWindow } from './close';
-import { WindowRef } from './WindowRef';
 
 @Component({
   selector: 'app-final-savings',
@@ -11,7 +9,7 @@ import { WindowRef } from './WindowRef';
 
 export class FinalSavingsComponent implements OnInit {
     data: {savings: number};
-  constructor(private route: ActivatedRoute, private winRef: WindowRef) { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.data = {
