@@ -11,7 +11,7 @@ export class TravelComponent implements OnInit {
     new Options('Planning to Travel Abroad?'),
     new Options('Traveling Tips & Benefits'),
     new Options('Exchange Rates'),
-    new Options('Card Useage Abroad')
+    new Options('Using your Debit/Credit Cards Abroad')
   ];
   constructor() { }
 
