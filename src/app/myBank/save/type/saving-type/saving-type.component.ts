@@ -37,9 +37,11 @@ export class SavingTypeComponent implements OnInit {
     if (index === 0) {
       this.showSave = false;
       this.showAdditional = false;
+      this.showContinue = false;
     } else if (index === 2) {
       this.showAdditional = false;
       this.showSave = true;
+      this.showContinue = false;
     }else if (index === 3) {
       this.showAdditional = false;
       this.showSave = false;
@@ -47,6 +49,7 @@ export class SavingTypeComponent implements OnInit {
     }else {
       this.showAdditional = true;
       this.showSave = false;
+      this.showContinue = false;
     }
   }
   onSubChange(index) {
