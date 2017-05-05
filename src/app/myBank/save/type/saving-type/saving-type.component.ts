@@ -15,6 +15,7 @@ export class SavingTypeComponent implements OnInit {
     new Save('Choose One'),
     new Save('Savings Goal'),
     new Save('Retirement'),
+    new Save('Help me monitor my finances')
   ];
 
   goals = [

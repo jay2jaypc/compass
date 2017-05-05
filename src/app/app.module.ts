@@ -13,6 +13,7 @@ import { CashFlowComponent } from './myBank/save/type/cash-flow/cash-flow.compon
 import { PilotComponent } from './myBank/pilot/pilot.component';
 import { Home2Component } from './myBank/home2/home2.component';
 import { TravelComponent } from './myBank/travel/travel.component';
+import { LinkAccountsComponent } from './myBank/link-accounts/link-accounts.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: HomeComponent},
@@ -35,6 +36,7 @@ const appRoutes: Routes = [
     CashFlowComponent,
     PilotComponent,
     TravelComponent,
+    LinkAccountsComponent,
   ],
   imports: [
     BrowserModule,

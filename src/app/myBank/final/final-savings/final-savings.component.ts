@@ -17,7 +17,7 @@ export class FinalSavingsComponent implements OnInit {
     };
   }
    closeWindow(): void {
-    window.close();
+
   }
 }
 
