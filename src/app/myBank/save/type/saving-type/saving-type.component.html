@@ -16,6 +16,9 @@
       <input #savingsName type="text" (keydown)="eventHandler(savingsName.value)" required>
     </div></tr>
   </table>
+  <div *ngIf="showContinue">
+    <a class="Next">Continue</a>
+  </div>
   <div *ngIf="showSave">
     <app-saving-amount></app-saving-amount>
   </div>
