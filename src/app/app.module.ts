@@ -22,7 +22,8 @@ const appRoutes: Routes = [
   { path: 'confirm/:savings', component: FinalSavingsComponent},
   { path: 'cashflow', component: CashFlowComponent},
   { path: 'pilot', component: PilotComponent},
-  { path: 'welcomeBack', component: Home2Component}
+  { path: 'welcomeBack', component: Home2Component},
+  { path: 'linkAccounts', component: LinkAccountsComponent}
 ];
 
 @NgModule({

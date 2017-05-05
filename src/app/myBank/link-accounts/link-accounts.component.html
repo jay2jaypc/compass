@@ -1,3 +1,19 @@
-<p>
-  link-accounts works!
-</p>
+<div class="welcomeHead">
+  <div class="container-fluid">
+    <h3>Would you like to link any account?</h3>
+    <table>
+      <tr><select #linkAccounts class="dropDown" (change)="onChLinks(linkAccounts.selectedIndex)">
+        <option *ngFor="let answer of answers" [value]="answers.indexOf(answer)">
+          {{answer.value}}
+        </option>
+        </select></tr>
+    </table>
+    <div *ngIf="showAccounts">
+      Routing: <input type="number">
+      Account: <input type="number">
+    </div>
+    <div *ngIf="showContinue">
+      <a class="Next">Continue</a>
+    </div>
+  </div>
+</div>
