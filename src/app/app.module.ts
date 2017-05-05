@@ -23,7 +23,7 @@ const appRoutes: Routes = [
   { path: 'cashflow', component: CashFlowComponent},
   { path: 'pilot', component: PilotComponent},
   { path: 'welcomeBack', component: Home2Component},
-  { path: 'linkAccounts', component: LinkAccountsComponent}
+  { path: 'link', component: LinkAccountsComponent}
 ];
 
 @NgModule({
